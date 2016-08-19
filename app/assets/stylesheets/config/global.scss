@@ -21,7 +21,7 @@ $nav_search_border : 1px solid rgba(255,255,255,0.5);
 $nav_menu_size : 1.1em;
 $nav_menu_space : 10px;
 
-@mixin fix_top{position : fixed; z-index : 1000;}
+@mixin fix_top{position : fixed; z-index : 100;}
 
 $carousel_color : green;
 $carousel_width : 100%;
