@@ -1,0 +1,107 @@
+@import "./config/global";
+
+#music_carousel{
+  background-color:$carousel_color;
+  width:$carousel_width;
+  height:$carousel_height;
+  
+  .carousel-inner{
+    .item{
+        .list_img{
+          @include blur;
+          width:100%;
+          height: 100%;
+        }
+        .carousel-caption{
+          top : $caption_box_top;
+          margin-top : -($caption_box_height/2);
+          #caption_img{
+            @include caption_box;
+            float : left;
+            width: $caption_img_width;
+            height : $caption_box_height;
+            padding : $caption_img_padding;
+            img{
+              width : 100%;
+              height : 100%;
+            }
+          }
+          #caption_info{
+            @include caption_box;
+            float : right;
+            width : $caption_info_width;
+            height : $caption_box_height;
+            padding : $caption_info_padding;
+            
+            #caption_rank{
+              float:left;
+              background-image: image-url('ranking.png');
+              background-size: $caption_rank_width $caption_rank_height;
+              display:inline-block;
+              width : $caption_rank_width;
+              height: $caption_rank_height;
+              h1{
+                margin-top:15px;
+                margin-left:-30px;
+              }
+            }
+            #caption_detail{
+              float:right;
+              display:inline-block;
+              width : 300px;
+              text-align:left;
+              h3{
+                margin-top:10px;
+                margin-bottom : 30px;
+              }
+              h2{
+                span{
+                  display:inline-block;
+                  width:40px;
+                  height:40px;
+                  background-color:#dd191d;
+                  font-size:0.5em;
+                  vertical-align:middle;
+                  text-align:center;
+                }
+              }
+            }
+          }
+        }
+      }
+  }
+}
+
+#middle_tab{
+  position:relative;
+  background-color: $middle_color; 
+  height: $middle_height;
+  padding: $box_top_padding $box_side_padding 0px $box_side_padding; //menu select button 배치하려고 padding 지움
+  text-align: center;
+  overflow:hidden;
+  #tab_menu{
+    display: inline-block;
+    li{
+      cursor: pointer;
+      text-align: center;
+      width:$middle_list_width; 
+      margin:$box_top_padding $middle_list_spacing; 
+      font-size:$middle_font_size;
+      p{
+        margin:0 auto;
+      }
+      .select_button{
+        background-color:white; 
+        width:100%; 
+        height:20px; 
+        display:none;
+      }
+    }
+  }
+}
+
+#content{
+  background-color: $content_color;
+  width : $content_width;
+  height: $content_height;
+}

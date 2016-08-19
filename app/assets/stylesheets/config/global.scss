@@ -1,0 +1,77 @@
+$box_top_padding : 10px;
+$box_side_padding : 150px; 
+
+@mixin absolute_middle($width){
+  position:absolute;
+  left:50%;
+  margin-left:-($width/2);
+}
+
+$nav_bar_color : rgba(0,0,0,0.6);
+$nav_bar_width : 100%;
+$nav_bar_height : 60px;
+
+$logo_font_size : 2.5em;
+
+$nav_search_color : rgba(0,0,0,0.6);
+$nav_search_width : 300px;
+$nav_search_height : $nav_bar_height - ($box_top_padding * 2);
+$nav_search_border : 1px solid rgba(255,255,255,0.5);
+
+$nav_menu_size : 1.1em;
+$nav_menu_space : 10px;
+
+@mixin fix_top{position : fixed; z-index : 1000;}
+
+$carousel_color : green;
+$carousel_width : 100%;
+$carousel_height : 500px;
+
+$caption_box_top : 50%;
+$caption_box_color : rgba(0,0,0,0.6);
+$caption_box_height : 250px; 
+$caption_img_width : 250px;
+$caption_img_padding : 10px;
+
+$caption_info_width : 400px;
+$caption_info_padding : 30px 0;
+$caption_rank_width : 90px;
+$caption_rank_height : 60px;
+
+@mixin caption_box{
+  position: inline-block;
+  background-color:$caption_box_color;
+}
+
+
+$middle_color : #dd191d;
+$middle_width : 100%;
+$middle_height : 60px;
+
+$middle_list_width:150px; 
+$middle_list_spacing:30px; 
+$middle_font_size:1.2em;
+
+$content_color : black;
+$content_width : 100%;
+$content_height : 100%;
+
+@mixin white_transperent_layer{
+  background-color:rgba(255, 255, 255, 0.2);
+  border-radius:10px;
+  display:inline-block;
+}
+
+@mixin blur {
+  filter:blur(5px);
+  -ms-filter:blur(5px);
+  -moz-filter:blur(5px);
+  -webkit-filter:blur(5px); 
+}
+
+$TAB_TITLE_WIDTH : 400px;
+$TAB_TITLE_HEIGHT:100px;
+
+$LIVE_ROW_HEIGHT:300px;
+$LIVE_RANK_WIDTH:300px;
+$LIVE_CHART_WIDTH:600px;

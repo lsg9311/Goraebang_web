@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>고래방 :: 오늘도 노래방을 부탁해!</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  	<%= render '/main/component/nav_bar' %>
+  	<div id="main_container">
+  		<%= yield %>	
+  	</div>
+  </body>
+</html>

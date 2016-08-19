@@ -1,0 +1,81 @@
+@import "./config/global";
+
+.tab_title_box{
+  margin:0 auto;
+  padding:10px 20px;
+  width:$TAB_TITLE_WIDTH;
+  height:$TAB_TITLE_HEIGHT;
+  text-align:center;
+  .title_line{
+    border-color: #ff281d;
+    margin: 10px 0;
+  }
+  .tab_title{
+    display:inline-block;
+    font-size:1.2em;
+    letter-spacing: 0.8em;
+  }
+}
+.live_row{
+  margin:20px 0;
+  padding: 0 $box_side_padding;
+  height: $LIVE_ROW_HEIGHT;
+  .live_rank{
+    @include white_transperent_layer;
+    float:left;
+    width:$LIVE_RANK_WIDTH;
+    height: $LIVE_ROW_HEIGHT;
+  }
+  .live_chart{
+    @include white_transperent_layer;
+    float:right;
+    width:$LIVE_CHART_WIDTH;
+    height: $LIVE_ROW_HEIGHT;
+  }
+}
+
+.card_box{
+  padding:0 $box_side_padding;
+}
+
+.button_row{
+  padding: 10px $box_side_padding;
+  margin-bottom : 30px;
+  .new_song_btn{
+    display:inline-block;
+    width:80px;
+    height:80px;
+    border-radius:5px;
+    margin-right:10px;
+    text-align : center;
+    padding-top:10px;
+    h6{
+      font-size:1em;
+    }
+    p{
+      font-size:0.8em;
+    }
+  }
+  .active_btn{
+    background-color : #dd191d;
+    color:white;
+  }
+  .inactive_btn{
+    background-color : #1f1f1f;
+    color : #434343;
+  }
+}
+
+.selector_row{
+  padding: 10px $box_side_padding;
+  .select_contain{
+    text-align:center;
+    .filter_select{
+      background-color : #2f2f2f;
+      width:90%;
+      height : 30px;
+      text-align:center;
+      border : none;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import "./config/global";
+
+
+
+#nav_bar{
+  background-color:$nav_bar_color;
+  padding : $box_top_padding $box_side_padding;
+  width : $nav_bar_width;
+  height : $nav_bar_height;
+  
+  @include fix_top;
+  #nav_logo{
+    display:inline-block;
+    font-size: $logo_font_size;
+    float:left;
+  }
+  
+  #nav_search{
+    display:inline-block;
+    width : $nav_search_width;
+    height : $nav_search_height;
+    @include absolute_middle($nav_search_width);
+    input{
+      color : white;
+      border : $nav_search_border;
+      background-color:$nav_search_color;
+      width : $nav_search_width;
+      height : $nav_search_height;
+      text-align : center;
+    }
+  }
+  
+  #nav_menu{
+    float:right;
+    font-size : $nav_menu_size;
+    padding : $box_top_padding 0;
+    li{
+      margin: 0 $nav_menu_space;
+      a{
+        text-decoration:none;
+        color:white;
+      }
+    }
+  }
+}
+
+#main_container{
+  position:absolute;
+  z-index:0;
+  width:100%; height:100%;
+}
+
