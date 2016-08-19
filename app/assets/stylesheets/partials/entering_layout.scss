@@ -1,0 +1,95 @@
+@import "./config/entering_variable";
+
+// Place all the styles related to the entering controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#entering_container{
+  margin:$entering_top_margin auto;
+  width : $entering_container_width;
+  height : $entering_container_height;
+  
+  #entering_logo{
+    width : $entering_logo_width;
+    height : $entering_logo_height;
+    text-align:center;
+    img{
+      width:200px;
+      height:200px;
+    }
+  }
+  
+  #entering_box{
+    width : $entering_box_width;
+    height : $entering_box_height;
+    background-color : $entering_box_color;
+    border-radius : $entering_box_radius;
+    padding : $entering_box_padding;
+  }
+  
+}
+
+#login_form{
+  #user_email{
+    height:40px;
+    width:100%;
+    margin-bottom : $row_margin;
+  }
+  #user_password{
+    height:40px;
+    width:100%;
+    margin-bottom : $row_margin;
+  }
+  #login_option_bar{
+    margin-bottom : $row_margin;
+    #find_password{
+      float:right;
+    }
+  }
+  #sign_in{
+    height:40px;
+    width:100%;
+    border:none;
+    display:block;
+    text-align:center;
+    background-color:#dd191d;
+    margin-bottom : $row_margin;
+  }
+  #sign_up{
+    padding:10px;
+    height:40px;
+    display:block;
+    text-align:center;
+    background-color:#dd191d;
+    margin-bottom : $row_margin;
+  }
+  #slice_bar{
+    width:100%;
+    margin-bottom : $row_margin;
+    hr{
+      display:inline-block;
+      width:100px;
+      margin : 0 10px;
+      border : 1px solid white;
+    }
+  }
+  #one_second{
+    a{
+      display:inline-block;
+      width:150px;
+      height:40px;
+      margin:0 10px;
+      text-align:center;
+      padding: 5px;
+      img{
+        width:30px;
+        height:30px;
+      }
+    }
+    #facebook{
+      background-color : #0040ff;
+    }
+    #twitter{
+      background-color : #55acef;
+    }
+  }
+}
