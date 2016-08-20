@@ -1,7 +1,11 @@
+@import "./config/global";
 #song_modal{
   .modal-content{
-    background-color : #282828;
+    .modal-header{
+      background-color : #282828;  
+    }
     .modal-body{
+      background-color : #373737;
       padding:0;
       .image_wrapper{
         .album_img{
@@ -15,16 +19,63 @@
         .album_info{
           position:absolute;
           text-align:center;
+          @include gradient_layer(transparent,#373737);
+          width:100%;
+          top:100px;
           .album_circle{
             width:100px;
             height:100px;
+            margin:0 auto;
             border-radius:50%;
+            margin-bottom : 100px;
             img{
               width:100%;
               height:100%;
+              border-radius:50%;
             }
           }
+           hr{
+              display:inline-block;
+              width:100px;
+              margin : 0 10px;
+              border : 1px solid white;
+            }
         }
+      }
+
+
+      .modal_cards{
+      	padding: 30px;
+      	overflow:hidden;
+      	#album_detail{
+      		padding:0;
+      		#album_card_wrapper{
+      		  padding-left:0px;
+      		}
+      		#album_song_card_wrapper{
+      		  padding-right:0px;
+      		}
+      	}
+      	#lyrics_card{
+      	  .card_body{
+      	    height:810px;
+      	  }
+      	  height:810px;
+      	}
+      	.modal_card{
+      		padding:0;
+      		box-shadow: 5px 5px 5px black;
+      		margin-bottom:30px;
+      		.card_head{
+      			padding:15px;
+      			background-color:#282828;
+      		}
+      		.card_body{
+      			padding:15px;
+      			height:200px;
+      			background-color:#3b3b3b;
+      		}
+      	}
       }
     }
   }

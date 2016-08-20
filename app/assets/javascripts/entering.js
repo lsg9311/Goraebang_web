@@ -4,7 +4,7 @@ var login_url = "http://localhost:3000/entering"; //배포시 바꿔야됨!!!!!
 var sign_up_validate = function(email,name,pw,pwc){
 	if(email==""||name==""||pw==""||pwc=="") return false;
 	else return true;
-}
+};
 
 $(document).ready(function(){
 	//로그인 요청
