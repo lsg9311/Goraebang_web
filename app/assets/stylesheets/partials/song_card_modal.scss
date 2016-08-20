@@ -19,7 +19,7 @@
         .album_info{
           position:absolute;
           text-align:center;
-          @include gradient_layer(transparent,#373737);
+          @include gradient_layer(#373737);
           width:100%;
           top:100px;
           .album_circle{
