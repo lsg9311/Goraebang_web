@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   
   root 'main#index'
   get 'entering' => 'entering#sign_in'
+  get 'entering/sign_up' => 'entering#sign_up'
 end

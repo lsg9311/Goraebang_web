@@ -20,51 +20,50 @@
   
   #entering_box{
     width : $entering_box_width;
-    height : $entering_box_height;
     background-color : $entering_box_color;
     border-radius : $entering_box_radius;
     padding : $entering_box_padding;
   }
   
 }
+.entering_row{
+  width:100%;
+  height:$entering_row_height;
+  margin-bottom : $entering_row_margin;
+}
+.entering_btn{
+  padding:$entering_btn_padding;
+  height:$entering_btn_height;
+  text-align:center;
+}
 
 #login_form{
-  #user_email{
-    height:40px;
-    width:100%;
-    margin-bottom : $row_margin;
+  fieldset{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    min-width: 0;
+    input{
+      color:$placeholder_color;
+    }
   }
-  #user_password{
-    height:40px;
-    width:100%;
-    margin-bottom : $row_margin;
-  }
-  #login_option_bar{
-    margin-bottom : $row_margin;
+  #login_opt{
+    margin-bottom:0;
     #find_password{
       float:right;
     }
   }
   #sign_in{
-    height:40px;
-    width:100%;
-    border:none;
     display:block;
-    text-align:center;
     background-color:#dd191d;
-    margin-bottom : $row_margin;
   }
   #sign_up{
-    padding:10px;
-    height:40px;
     display:block;
-    text-align:center;
     background-color:#dd191d;
-    margin-bottom : $row_margin;
   }
   #slice_bar{
     width:100%;
-    margin-bottom : $row_margin;
+    margin-bottom:0;
     hr{
       display:inline-block;
       width:100px;
@@ -72,24 +71,65 @@
       border : 1px solid white;
     }
   }
-  #one_second{
+  #sns_login{
+    margin-bottom:0;
     a{
       display:inline-block;
-      width:150px;
-      height:40px;
-      margin:0 10px;
-      text-align:center;
-      padding: 5px;
+      width:$sns_login_width;
       img{
-        width:30px;
-        height:30px;
+        width:20px;
+        height:20px;
       }
     }
     #facebook{
       background-color : #0040ff;
+      float:left;
     }
     #twitter{
       background-color : #55acef;
+      float:right;
     }
   }
 }
+
+#sign_up_form{
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  min-width: 0;
+  input{
+    color:$placeholder_color;
+  }
+  #gender_row{
+    .gender{
+      display:inline-block;
+      padding:5px;
+      .gender_btn{
+        border:none;
+        width:100%;
+        height:100%;
+        opacity:0.5;
+      }
+      #male{
+        background-color: blue;
+      }
+      #female{
+        background-color: red;
+      }
+      #sex_none{
+        background-color: orange;
+      }
+    }
+  }
+  #terms{
+    margin-bottom:0;
+  }
+  #sign_up_btn{
+    color:white;
+    border:none;
+    display:block;
+    width:100%;
+    background-color:#dd191d;
+  }
+}
+

@@ -1,17 +1,19 @@
 <form id="login_form">
-	<input type="email" name="user[email]" id="user_email"/>
-	<input type="password" name="user[password]" id="user_password"/>
-	<div id="login_option_bar">
-		<input type="checkbox"/> 로그인 유지
+	<fieldset>
+		<input type="email" class="entering_row" name="user[email]" id="user_email" placeholder="이메일"/>
+		<input type="password" class="entering_row" name="user[password]" id="user_password" placeholder="비밀번호"/>
+	</fieldset>
+	<div id="login_opt" class="entering_row" >
+		<input type="checkbox" name="save_email"/><label for="save_email"> 로그인 유지</label>
 		<a href="/find_password" id="find_password">비밀번호 찾기</a>
 	</div>
-	<input type="submit" id="sign_in" value="로그인"/>
-	<a href="sign_up" id="sign_up">가입하기</a>
-	<div id="slice_bar">
+	<a href=" " id="sign_in" class="entering_row entering_btn" >로그인</a>
+	<a href="/entering/sign_up" id="sign_up" class="entering_row entering_btn" >가입하기</a>
+	<div id="slice_bar" class="entering_row" >
 	<hr/><span>1초만에 가입하기</span><hr/>
 	</div>
-	<div id="one_second">
-		<a href="#" id="facebook"><img src="./image/facebook-logo.png"/></a>
-		<a href="#" id="twitter"><img src="./image/twitter.png"/></a>	
+	<div id="sns_login" class="entering_row" >
+		<a href="#" id="facebook" class="entering_btn"><img src="./image/facebook-logo.png"/></a>
+		<a href="#" id="twitter" class="entering_btn"><img src="./image/twitter.png"/></a>	
 	</div>
 </form>

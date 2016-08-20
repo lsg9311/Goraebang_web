@@ -26,7 +26,7 @@ body {
 /* HTML5 display definitions
    ========================================================================== */
 a {text-decoration: none; color:white;}
-a:hover
+a:hover {text-decoration: none; color:white;}
 /**
  * Add the correct display in IE 9-.
  * 1. Add the correct display in Edge, IE, and Firefox.
