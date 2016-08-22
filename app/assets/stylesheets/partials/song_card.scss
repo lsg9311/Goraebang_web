@@ -1,6 +1,7 @@
 @import "./config/global";
 $CARD_WIDTH : 200px;
 $CARD_HEIGHT : 200px;
+$CARD_MARGIN : 40px;
 
 .song_card{
   background-color: #dd191d;
@@ -10,8 +11,8 @@ $CARD_HEIGHT : 200px;
   height : $CARD_HEIGHT;
   position:relative;
   display : inline-block;
-  margin-right:30px;
-  margin-bottom:30px;
+  margin-right:$CARD_MARGIN;
+  margin-bottom:$CARD_MARGIN;
   z-index:0;
   .song_card_1st_layer{
     @include gradient_layer(rgba(0,0,0,0.5));
