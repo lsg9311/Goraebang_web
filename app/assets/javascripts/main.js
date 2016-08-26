@@ -41,7 +41,7 @@ var make_carousel = function(data,i){
 	var caption_rank=$("<div>").attr("id","caption_rank").append("<h1>"+rank+"위</h1>");	
 	var caption_detail=$("<div>").attr("id","caption_detail");
 	caption_detail.append("<h1>"+title+"</h1>");
-	caption_detail.append("<h3>ARTIST</h3>");
+	caption_detail.append("<h3>가수</h3>");
 	caption_detail.append("<h4>8920명의 리스트에 라인업</h4>");
 	caption_detail.append("<h2>번호 455010 <span><em>Line<br/>up!</em></span></h2>");
 	
